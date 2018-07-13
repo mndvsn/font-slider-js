@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<title>Slider</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link href="slider.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"> -->
+  <style media="screen">
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+    :root {
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-family: 'Noto Sans IKEA', verdana, helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.5em;
+    }
+    body,
+    html {
+      background: #f3f3f3;
+      color: black;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      max-width: 100%;
+      font-size: 1rem;
+    }
+    .demo-wrap {
+      background-color: white;
+      margin: 0 auto;
+      padding: 3em 4em;
+      width: 100%;
+      max-width: 1200px;
+      height: 100vh;
+    }
+  </style>
+  <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+  <script src="slider.js"></script>
+</head>
+<body>
+  <div class="demo-wrap">
+    <div class="fs-module fs-container" id="fs-slider-1" data-initial="3" data-fields='["kerning","font size","tracking"]' data-values='[["Metrics","10 pt","0"],["Metrics","20 pt","0"],["Metrics","30 pt","-10"],["Metrics","40 pt","-20"],["Metrics","50 pt","-25"],["Metrics","60 pt","-30"]]'>
+      <header>
+        <dl></dl>
+        <div class="fs-control">
+          <input type="range" min="1" max="100" value="50">
+        </div>
+      </header>
+      <div id="controls" class="controls"></div>
+      <div class="fs-textdisplay heavy" data-styles='[{"fontSize":"10px","letterSpacing":"0px"},{"fontSize":"20px","letterSpacing":"0px"},{"fontSize":"30px","letterSpacing":"-1px"},{"fontSize":"40px","letterSpacing":"-2px"},{"fontSize":"50px","letterSpacing":"-2.5px"},{"fontSize":"60px","letterSpacing":"-3px"}]'>The quick brown fox jumps over the lazy dog.</div>
+    </div>
+
+		<div class="fs-module fs-container" id="fs-slider-1" data-initial="1" data-fields='["font size","reading distance"]' data-values='[["16 pt","20 cm"],["20 pt","30 cm"],["128 pt","4 m"]]'>
+      <header>
+        <dl></dl>
+        <div class="fs-control">
+          <input type="range" min="1" max="100" value="50">
+        </div>
+      </header>
+      <div id="controls" class="controls"></div>
+      <div class="fs-textdisplay oneline heavy" data-styles='[{"fontSize":"16px","letterSpacing":"0px"},{"fontSize":"20px","letterSpacing":"0px"},{"fontSize":"128px","letterSpacing":"-3px"}]'>Distance</div>
+    </div>
+
+    <div class="fs-module fs-container" id="fs-slider-3" data-initial="0" data-fields='["font size","leading"]' data-values='[["24 pt","1"],["36 pt", "1.2"]]'>
+      <header>
+        <dl></dl>
+        <div class="fs-control">
+          <input type="range" min="0" max="1" value="0">
+        </div>
+      </header>
+      <div id="controls" class="controls"></div>
+      <div class="fs-textdisplay" data-styles='[{"fontSize":"24px","lineHeight":"1.2"},{"fontSize":"36px","lineHeight":"1.2"}]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+  </div>
+</body>
+</html>

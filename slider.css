@@ -1,0 +1,115 @@
+.fs-container {
+  padding-bottom: 3em;
+  position: relative;
+}
+
+.fs-container header {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 1em 0;
+  margin-bottom: 1em;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.fs-container header > * {
+  flex: 0 1 auto;
+}
+
+.fs-container header dl {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.fs-container header dt, .fs-container header dd {
+  display: inline-block;
+}
+.fs-container header dt {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.fs-container header dt::after {
+  content: ":";
+  margin-right: 4px;
+}
+.fs-container header dd {
+  margin: 0 1.5em 0 0;
+}
+.fs-container .fs-textdisplay {
+  max-width: 100%;
+  line-height: 1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.fs-container .fs-textdisplay.heavy {
+  font-weight: bold;
+}
+.fs-container .fs-textdisplay.oneline {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.fs-container .fs-control input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 1px;
+  outline: none;
+}
+.fs-container .fs-control input[type=range]:focus {
+  outline: none;
+}
+.fs-container .fs-control input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: -14px;
+  background: #1d78c5;
+  border: 4px solid white;
+  border-radius: 50%;
+  box-sizing: content-box;
+  cursor: pointer;
+  -webkit-transition: border 0.2s ease;
+  transition: border 0.2s ease;
+}
+.fs-container .fs-control input[type=range]:hover::-webkit-slider-thumb,
+.fs-container .fs-control input[type=range]:active::-webkit-slider-thumb {
+  border-color: #d1e4f3;
+}
+.fs-container .fs-control input[type=range]::-webkit-slider-runnable-track {
+  background: #5e9bd4;
+  height: 2px;
+}
+.fs-container .fs-control input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #1d78c5;
+  border: 4px solid #d1e4f3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.fs-container .fs-control input[type=range]:-moz-focusring {
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+.fs-container .fs-control input[type=range]::-moz-range-track {
+  background: #5e9bd4;
+}
+.fs-container .fs-control input[type=range]::-ms-track {
+  height: 2px;
+  background: transparent;
+  border-color: transparent;
+  border-width: 8px 0;
+  color: transparent;
+  cursor: pointer;
+}
+.fs-container .fs-control input[type=range]::-ms-thumb {
+  margin-top: 0;
+}
+.fs-container .fs-control input[type=range]::-ms-fill-lower {
+  background: #5e9bd4;
+}
+.fs-container .fs-control input[type=range]::-ms-fill-upper {
+  background: #cbe0f1;
+}
