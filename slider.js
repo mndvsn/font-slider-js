@@ -10,7 +10,6 @@ function sliderInit(el) {
   var fields = JSON.parse(el.getAttribute('data-fields')), flen = fields.length;
   var valueSets = JSON.parse(el.getAttribute('data-values')), vlen = valueSets.length;
   for (var i=0; i<flen; i++) {
-    // console.log(fields[i]);
     var dt = document.createElement('dt');
     dt.innerHTML = fields[i];
     dl.appendChild(dt);
@@ -56,7 +55,6 @@ function sliderSetData(el, i = 0) {
       td.style[s] = newStyles[s].toString();
     }
   }
-  // console.log(el.valueSets);
 };
 ready(function(){
   var sliders = document.querySelectorAll(".fs-module"), elen = sliders.length;
