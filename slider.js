@@ -21,7 +21,6 @@ function sliderInit(el) {
   el.valueSets = valueSets;
 
   var styles = JSON.parse(el.querySelector('.fs-textdisplay').getAttribute('data-styles'));
-  console.log("styles", styles);
   el.styles = styles;
 
   var c = el.querySelector('.fs-control input');
