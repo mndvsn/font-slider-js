@@ -63,7 +63,7 @@
   width: 20px;
   height: 20px;
   margin-top: -14px;
-  background: #1d78c5;
+  background: #009fe3;
   border: 4px solid white;
   border-radius: 50%;
   box-sizing: content-box;
@@ -73,10 +73,10 @@
 }
 .fs-container .fs-control input[type=range]:hover::-webkit-slider-thumb,
 .fs-container .fs-control input[type=range]:active::-webkit-slider-thumb {
-  border-color: #d1e4f3;
+  border-color: #ddf0f7;
 }
 .fs-container .fs-control input[type=range]::-webkit-slider-runnable-track {
-  background: #5e9bd4;
+  background: #009fe3;
   height: 2px;
 }
 .fs-container .fs-control input[type=range]::-moz-range-thumb {
@@ -84,8 +84,8 @@
   appearance: none;
   width: 20px;
   height: 20px;
-  background: #1d78c5;
-  border: 4px solid #d1e4f3;
+  background: #009fe3;
+  border: 4px solid #ddf0f7;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -94,7 +94,7 @@
     outline-offset: -1px;
 }
 .fs-container .fs-control input[type=range]::-moz-range-track {
-  background: #5e9bd4;
+  background: #009fe3;
 }
 .fs-container .fs-control input[type=range]::-ms-track {
   height: 2px;
@@ -108,8 +108,8 @@
   margin-top: 0;
 }
 .fs-container .fs-control input[type=range]::-ms-fill-lower {
-  background: #5e9bd4;
+  background: #009fe3;
 }
 .fs-container .fs-control input[type=range]::-ms-fill-upper {
-  background: #cbe0f1;
+  background: #ddf0f7;
 }
