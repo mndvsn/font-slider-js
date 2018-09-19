@@ -4,7 +4,7 @@ function ready(callback){
   else document.attachEvent('onreadystatechange', function(){
     if (document.readyState=='complete') callback();
   });
-};
+}
 function sliderInit(el) {
   var dl = el.querySelector('dl');
   var fields = JSON.parse(el.getAttribute('data-fields')), flen = fields.length;
@@ -29,6 +29,7 @@ function sliderInit(el) {
   c.setAttribute('value', 0);
   c.slider = el;
   c.addEventListener('input', sliderChanged);
+  c.addEventListener('change', sliderChanged);
   el.control = c;
 
   sliderSetData(el, el.getAttribute('data-initial'));
@@ -37,7 +38,10 @@ function sliderChanged(e) {
   var slider = e.target.slider;
   sliderSetData(slider, e.target.value);
 }
-function sliderSetData(el, i = 0) {
+function sliderSetData(el, i) {
+  if (i == undefined) {
+    i = 0;
+  }
   if (el.control.getAttribute('value') != i) {
     el.control.setAttribute('value', i);
   }
@@ -54,7 +58,7 @@ function sliderSetData(el, i = 0) {
       td.style[s] = newStyles[s].toString();
     }
   }
-};
+}
 ready(function(){
   var sliders = document.querySelectorAll(".fs-module"), elen = sliders.length;
   for (var e=0; e<elen; e++) {
